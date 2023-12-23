@@ -1,0 +1,166 @@
+scratch
+
+*, *:before, *:after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*----------------------------------------------*/
+
+header {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  width: 100%;
+  height: 75px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.inputBoxOff {
+  display: none;
+}
+
+.inputBoxOn {
+  height: 33vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(220, 220, 220);
+}
+
+.inputBoxOn form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.inputBoxOn form label {
+  font-size: 3rem;
+}
+
+.inputBoxOn form input {
+  outline: none;
+  border: none;
+  width: 75%;
+  height: 15%;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.inputBoxOn form button {
+  margin-top: 10px;
+  padding: 3px;
+  width: 33%;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+/*----------------------------------------------*/
+
+.summaryModOff {
+  display: none;
+}
+
+.summaryModOn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(220, 220, 220);
+  animation: moveUp 1.5s ease forwards;
+  animation-delay: 2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 33vh;
+}
+
+@keyframes moveUp {
+  0% {
+
+  }
+  100% {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 75px;
+    height: 15vh;
+  }
+}
+
+.summaryModOn h2 {
+  animation: fadeIn 1s ease;
+  font-size: 3rem;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*----------------------------------------------*/
+
+.accordionButton {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.panelUp {
+  display: none;
+}
+
+.panelDown {
+  display: flex;
+}
+
+/*----------------------------------------------*/
+
+.outfit {
+  margin-top: 17vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headPic {
+  height: 100px;
+}
+
+.topPic {
+  height: 300px;
+}
+
+.bottomPic {
+  width: 50vw;
+}
+
+.feetPic {
+  width: 45vw;
+}
+

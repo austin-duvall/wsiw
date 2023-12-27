@@ -1,11 +1,27 @@
 # Run WSIW
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). In the project directory, you can run:
+This project relies on two different APIs to function properly, with both keys stored in a .env file in the root directory.
 
-### `npm start`
+For security purposes, these keys are not provided.
 
-Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can retrieve your own keys from these two places:
 
-The page will reload when you make changes.
-You may also see any lint errors in the console
+* [Google Maps Geocode API ](https://developers.google.com/maps/documentation/geocoding/get-api-key)
+* [Open Weather API]()
+
+Once you have your two API keys, please create a .env file in the root directory and copy and paste this code:
+
+```
+REACT_APP_GEO_KEY={YOUR_GOOGLE_MAPS_KEY}
+REACT_APP_WEA_KEY={YOUR_OPEN_WEATHER_KEY}
+```
+
+
+Following this, you can run:
+
+npm install
+
+npm start
+
+
+Good to go!
